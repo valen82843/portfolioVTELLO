@@ -1,0 +1,88 @@
+body{
+    background-color: rgb(253, 252, 220);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0; /* Fija el header en la parte superior de la ventana */
+    left: 0; /* Fija el header a la izquierda */
+    z-index: 999; /* Asegura que el header esté por encima de otros elementos */
+    background-color: rgb(253, 252, 220);
+
+}
+
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    height: 100%; /* Establece la altura del menú */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 10px; /* Espaciado entre elementos del menú */
+}
+
+.menu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    line-height: 100px; /* Establece la altura del menú */
+    position: relative; /* Añade posición relativa para la pseudo-clase ::after */
+}
+
+.menu li a::after {
+    content: ''; /* Crea un pseudo-elemento */
+    position: absolute; /* Posiciona el pseudo-elemento */
+    left: 0;
+    bottom: 0;
+    width: 0; /* Inicialmente la línea no tiene ancho */
+    height: 2px; /* Grosor de la línea */
+    background-color: rgb(58, 58, 58);
+    transition: width 0.3s ease; /* Agrega una transición suave para el ancho */
+}
+
+.menu li a:hover::after {
+    width: 100%; /* Aumenta el ancho al 100% al pasar el mouse */
+}
+
+
+.menu li a:hover {
+    color: rgb(58, 58, 58); /* Cambia el color al pasar el mouse */
+}
+
+.contactame{
+    position: relative;
+    text-align: center;
+    top: 200px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 80px;
+}
+.contactos{
+    position: relative;
+    text-align: center;
+    top: 200px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+}
+.linkedin{
+    position: relative;
+    text-align: center;
+    top: 200px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    text-decoration: underline; /* Agrega subrayado */
+    text-decoration-color: black; /* Color del subrayado */
+    color: black !important; /* Color del texto siempre negro */
+}

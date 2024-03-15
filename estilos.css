@@ -1,0 +1,180 @@
+body{
+    background-color: rgb(253, 252, 220);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0; /* Fija el header en la parte superior de la ventana */
+    left: 0; /* Fija el header a la izquierda */
+    z-index: 999; /* Asegura que el header esté por encima de otros elementos */
+    background-color: rgb(253, 252, 220);
+
+}
+
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    height: 100%; /* Establece la altura del menú */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 10px; /* Espaciado entre elementos del menú */
+}
+
+.menu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    line-height: 100px; /* Establece la altura del menú */
+    position: relative; /* Añade posición relativa para la pseudo-clase ::after */
+}
+
+.menu li a::after {
+    content: ''; /* Crea un pseudo-elemento */
+    position: absolute; /* Posiciona el pseudo-elemento */
+    left: 0;
+    bottom: 0;
+    width: 0; /* Inicialmente la línea no tiene ancho */
+    height: 2px; /* Grosor de la línea */
+    background-color: rgb(58, 58, 58);
+    transition: width 0.3s ease; /* Agrega una transición suave para el ancho */
+}
+
+.menu li a:hover::after {
+    width: 100%; /* Aumenta el ancho al 100% al pasar el mouse */
+}
+
+
+.menu li a:hover {
+    color: rgb(58, 58, 58); /* Cambia el color al pasar el mouse */
+}
+
+.linea1 {
+    width: 45%;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    margin: 10%;
+    top: 300px; /* Ajusta la posición vertical según tus necesidades */
+}
+
+.imagen-izquierda {
+    float: right; 
+    width: 550px;
+    height: 700px;
+    transition: transform 0.8s ease; /* Transición suave */
+    margin-right: 10%;
+    position: relative;
+    bottom: 150px;
+  }
+
+  .imagen-izquierda:hover {
+    transform: scale(1.05); /* Zoom del 10% */
+  }
+.cont1 {
+    width: 50%;
+    height: 350px;
+    position: relative;
+    top: 200px;
+    left: 10%;
+}
+
+
+.titulo{
+  font-family: "Montserrat", sans-serif;
+  font-size: 100px;
+  color: rgb(0, 0, 0);
+ 
+}
+.descripcion{
+    font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  
+}
+.contenedordesc{
+    width: 800px;
+    height: 400px;
+    position: relative;   
+}
+
+.linea2{
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    top: 250px; /* Ajusta la posición vertical según tus necesidades */
+}
+
+.skills {
+    position: relative;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    position: relative;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+}
+
+.cont2{
+    width: 300px;
+    height: 150px;
+    margin: auto;
+    position: relative;
+    top: 250px;
+}
+
+.skillsdesc{
+    position: relative;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+.linea3{
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    top: 400px; /* Ajusta la posición vertical según tus necesidades */
+}
+.contworks {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 450px;
+}
+
+.works {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+}
+
+.pagina1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+}
+
+.enlace {
+    text-decoration: underline; /* Agrega subrayado */
+    text-decoration-color: black; /* Color del subrayado */
+    color: black !important; /* Color del texto siempre negro */
+}
+
